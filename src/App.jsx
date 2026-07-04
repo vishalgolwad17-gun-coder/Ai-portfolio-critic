@@ -1,5 +1,6 @@
 import React from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import Signup from './components/signupfrom/Signup'
 import Loginform from './components/loginform/Loginform'
 import Home from './components/Home'
@@ -21,7 +22,7 @@ const App = () => {
         <Route path="/Aianalysisdata" element={<Aianalysisdata/>}/>
         <Route path="/Resultdashboard" element={<Resultdashboard/>}/>
       </Routes>
-        
+      <Analytics />
     </div>
   )
 }
